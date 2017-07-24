@@ -1,0 +1,15 @@
+<section id="banner">
+    <div class="content">
+        <header>
+            <h1>{{ featPost.title }}</h1>
+            <p>{{ featPost.subtitle }}</p>
+        </header>
+        <p>{{ featPost.excerpt }}</p>
+        <ul class="actions">
+            <li><a href="{{ root_url }}{{ featPost.url }}" class="button big">Preberi več</a></li>
+        </ul>
+    </div>
+    <span class="image object">
+        <img src="{{ root_url }}{{ featPost.featured-image }}" alt="" />
+    </span>
+</section>

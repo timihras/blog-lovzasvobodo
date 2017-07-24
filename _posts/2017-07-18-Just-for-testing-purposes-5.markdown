@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Ati v zagati"
-subtitle: "Kako je, ko prvič držiš svojega otroka"
+title:  "Just for testing purposes 5"
+subtitle: "This is a test subtitle for testing purposes 5"
 description: "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam."
-featured-image: /images/pic07.jpg
-date:   2017-07-23 12:22:22 +0200
-categories: post ati-v-zagati
+featured-image: /images/pic05.jpg
+date:   2017-07-18 15:29:22 +0200
+categories: post svoboda
 excerpt_separator: <!--more-->
 ---
 

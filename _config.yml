@@ -1,6 +1,7 @@
 # Site settings
-title: Your awesome title
-email: your-email@example.com
+title: Lov za svobodo
+author: Timi Hraš
+email: hello@lovzasvobodo.si
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -8,6 +9,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 disqus_shortname: "lovzasvobodo"
+permalink: /:year/:month/:title
 
 # Build settings
 markdown: kramdown
@@ -16,10 +18,10 @@ plugins:
 
 # Owner/author information
 owner:
-  name: Your Name
-  avatar: avatar.jpg
+  name: Timi Hraš
+  avatar: timi_hras.jpg
   bio: "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
-  email: you@email.com
+  email: timi@lovzasvobodo.si
   # Social networking links used in footer. Update and remove as you like.
   social: 
     - title: twitter

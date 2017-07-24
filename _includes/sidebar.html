@@ -14,27 +14,15 @@
                 <h2>Menu</h2>
             </header>
             <ul>
-                <li><a href="index.html">Domov</a></li>
-                <li><a href="generic.html">O meni</a></li>
-                <li><a href="elements.html">Elements</a></li>
+                <li><a href="{{ site.url }}/">Domov</a></li>
+                <li><a href="{{ site.url }}/">O meni</a></li>
                 <li>
-                    <span class="opener">Kategorije</span>
+                    <span class="opener active">Kategorije</span>
                     <ul>
                         <li><a href="#">Svoboda</a></li>
                         <li><a href="#">Ati v zagati</a></li>
                         <li><a href="#">Posel</a></li>
                         <li><a href="#">Ostalo</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Etiam Dolore</a></li>
-                <li><a href="#">Adipiscing</a></li>
-                <li>
-                    <span class="opener">Another Submenu</span>
-                    <ul>
-                        <li><a href="#">Lorem Dolor</a></li>
-                        <li><a href="#">Ipsum Adipiscing</a></li>
-                        <li><a href="#">Tempus Magna</a></li>
-                        <li><a href="#">Feugiat Veroeros</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Maximus Erat</a></li>
@@ -49,18 +37,12 @@
                 <h2>Ante interdum</h2>
             </header>
             <div class="mini-posts">
+                {% for miniPost in site.posts limit:3 %}
                 <article>
-                    <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                    <a href="{{ root_url }}{{ miniPost.url }}" class="image"><img src="{{ root_url }}{{ miniPost.featured-image }}" alt="" /></a>
+                    <p><strong>{{ miniPost.title }}</strong><br/>{{ miniPost.subtitle }}</p>
                 </article>
-                <article>
-                    <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-                </article>
-                <article>
-                    <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-                </article>
+                {% endfor %}
             </div>
             <ul class="actions">
                 <li><a href="#" class="button">More</a></li>
@@ -70,20 +52,21 @@
         <!-- Section -->
         <section>
             <header class="major">
-                <h2>Get in touch</h2>
+                <h2>Ostani v stiku</h2>
             </header>
             <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper
                 dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
             <ul class="contact">
-                <li class="fa-envelope-o"><a href="#">information@untitled.tld</a></li>
-                <li class="fa-phone">(000) 000-0000</li>
-                <li class="fa-home">1234 Somewhere Road #8254<br /> Nashville, TN 00000-0000</li>
+                <li class="fa-envelope-o"><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                <li class="fa-instagram"><a href="https://instagram.com/lovzasvobodo">instagram.com/lovzasvobodo</a></li>
+                <li class="fa-home">Maribor, Slovenija</li>
             </ul>
         </section>
 
         <!-- Footer -->
         <footer id="footer">
-            <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+            <p class="copyright">&copy; Lov za svobodo. Vse pravice pridržane.</p>
+            <p class="copyright">Vir fotografij: <a href="https://unsplash.com">Unsplash</a>. Oblikovanje: <a href="https://html5up.net">HTML5 UP</a>. Izvedba: <a href="https://timaja.si">Timaja</a></p>
         </footer>
 
     </div>
