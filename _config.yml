@@ -21,8 +21,12 @@ owner:
   bio: "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
   email: you@email.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter: "https://twitter.com/lovzasvobodo"
-  facebook: "https://facebook.com/lovzasvobodo"
-  instagram: "https://instagram.com/lovzasvobodo"
-  youtube: "https://instagram.com/lovzasvobodo"
-
+  social: 
+    - title: twitter
+      link: "https://twitter.com/lovzasvobodo"
+    - title: facebook
+      link:  "https://facebook.com/lovzasvobodo"
+    - title: instagram
+      link:  "https://instagram.com/lovzasvobodo"
+    - title: youtube
+      link:  "https://youtube.com/lovzasvobodo"
