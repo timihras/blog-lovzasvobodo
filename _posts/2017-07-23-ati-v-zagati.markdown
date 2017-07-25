@@ -4,6 +4,8 @@ title:  "Ati v zagati"
 subtitle: "Kako je, ko prvič držiš svojega otroka"
 description: "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam."
 featured-image: /images/pic07.jpg
+post-image: /images/pic11.jpg
+post-image: /images/pic11.jpg
 date:   2017-07-23 12:22:22 +0200
 categories: post ati-v-zagati
 excerpt_separator: <!--more-->
