@@ -25,26 +25,26 @@
 				<!-- Section -->
 				<section>
 					<header class="major">
-						<h2>Erat lacinia</h2>
+						<h2>Zakaj lov za svobodo?!</h2>
 					</header>
 					<div class="features">
 						<article>
-							<span class="icon fa-diamond"></span>
+							<span class="icon fa-bar-chart"></span>
 							<div class="content">
-								<h3>Portitor ullamcorper</h3>
-								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla
-									amet lorem feugiat tempus aliquam.</p>
+								<h3>Podjetništvo in finance</h3>
+								<p>Moj največji cilj je, da živim dobro življenje. Življenje polno pozitivnih trenutkov, kjer lahko 
+									veliko časa namenim svoji družini in v katerem lahko družini zagotovim soliden standard življenja.</p>
 							</div>
 						</article>
 						<article>
-							<span class="icon fa-paper-plane"></span>
+							<span class="icon fa-line-chart"></span>
 							<div class="content">
-								<h3>Sapien veroeros</h3>
-								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla
-									amet lorem feugiat tempus aliquam.</p>
+								<h3>Izboljšanje samega sebe</h3>
+								<p>Dolga leta so bile knjige za izboljšanje sebe odveč in v breme. No danes uživam v prebiranju
+									takšnih in drugačnih izkušenj. Dogodkov iz katerih se lahko nekaj naučimo brez da naredimo enako napako.</p>
 							</div>
 						</article>
-						<article>
+						<!--<article>
 							<span class="icon fa-rocket"></span>
 							<div class="content">
 								<h3>Quam lorem ipsum</h3>
@@ -59,21 +59,21 @@
 								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla
 									amet lorem feugiat tempus aliquam.</p>
 							</div>
-						</article>
+						</article>-->
 					</div>
 				</section>
 
 				<!-- Section -->
 				<section>
 					<header class="major">
-						<h2>Ipsum sed dolor</h2>
+						<h2>Izpostavljeni prispevki, ki bi te lahko zanimali..</h2>
 					</header>
 					<div class="posts">
 						{% for post in site.posts offset: 1 limit:6 %}
 						<article>
 							<a href="{{ root_url }}{{ post.url }}" class="image"><img src="{{ root_url }}{{ post.featured-image }}" alt="" /></a>
 							<h3>{{ post.title }}</h3>
-							<p>{{ post.description }}</p>
+							<p>{{ post.excerpt }}</p>
 							<ul class="actions">
 								<li><a href="{{ root_url }}{{ post.url }}" class="button">Preberi več</a></li>
 							</ul>
