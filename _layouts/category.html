@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	{% include head.html %}
+</head>
+
+<body>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				{% include header.html %}
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Prispevki, ki spadajo v kategorijo <strong>{{ page.tag }}</strong></h2>
+					</header>
+					<div class="posts">
+						{% for post in site.categories[page.tag] limit:6 %}
+						<article>
+							<a href="{{ root_url }}{{ post.url }}" class="image"><img src="{{ root_url }}{{ post.featured-image }}" alt="" /></a>
+							<h3><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h3>
+							<p>{{ post.excerpt }}</p>
+							<ul class="actions">
+								<li><a href="{{ root_url }}{{ post.url }}" class="button">Preberi več</a></li>
+							</ul>
+						</article>
+						{% endfor %}
+					</div>
+				</section>
+
+			</div>
+		</div>
+
+		<!-- Sidebar -->
+		{% include sidebar.html %}
+
+	</div>
+
+	<!-- Scripts -->
+	{% include scripts.html %}
+
+</body>
+
+</html>

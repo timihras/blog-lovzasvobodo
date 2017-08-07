@@ -6,7 +6,8 @@ description: "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore
 featured-image: /images/pic02.jpg
 post-image: /images/pic11.jpg
 date:   2017-07-17 15:29:22 +0200
-categories: post svoboda
+categories: 
+    - "svoboda" 
 excerpt_separator: <!--more-->
 ---
 

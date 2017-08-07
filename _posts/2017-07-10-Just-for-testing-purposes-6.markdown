@@ -6,7 +6,8 @@ description: "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore
 featured-image: /images/pic06.jpg
 post-image: /images/pic11.jpg
 date:   2017-07-10 15:29:22 +0200
-categories: post posel
+categories: 
+    - "podjetnistvo" 
 excerpt_separator: <!--more-->
 ---
 

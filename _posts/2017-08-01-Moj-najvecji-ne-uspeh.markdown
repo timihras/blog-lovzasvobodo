@@ -6,7 +6,8 @@ description: "Finančna svoboda, besedna zveza ki predstavlja zelo širok pojem.
 featured-image: /images/pic01.jpg
 post-image: /images/pic11.jpg
 date:   2017-08-04 11:29:00 +0200
-categories: post svoboda
+categories: 
+    - "podjetnistvo" 
 excerpt_separator: <!--more-->
 ---
 

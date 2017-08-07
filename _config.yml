@@ -33,6 +33,18 @@ owner:
     - title: youtube
       link:  "https://youtube.com/lovzasvobodo"
 
+collections:
+  category:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+
 webrick:
   headers:
     Access-Control-Allow-Origin: "*"

@@ -72,7 +72,7 @@
 						{% for post in site.posts offset: 1 limit:6 %}
 						<article>
 							<a href="{{ root_url }}{{ post.url }}" class="image"><img src="{{ root_url }}{{ post.featured-image }}" alt="" /></a>
-							<h3>{{ post.title }}</h3>
+							<h3><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h3>
 							<p>{{ post.excerpt }}</p>
 							<ul class="actions">
 								<li><a href="{{ root_url }}{{ post.url }}" class="button">Preberi več</a></li>

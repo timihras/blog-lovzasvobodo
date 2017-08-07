@@ -18,12 +18,12 @@
                 <li><a href="{{ site.url }}/">O meni</a></li>
                 <li>
                     <span class="opener active">Kategorije</span>
-                    <ul>
-                        <li><a href="#">Svoboda</a></li>
-                        <li><a href="#">Ati v zagati</a></li>
-                        <li><a href="#">Posel</a></li>
-                        <li><a href="#">Ostalo</a></li>
-                    </ul>
+                     <ul>
+                        {% assign sortedCategories = site.categories | sort %}
+                        {% for category in sortedCategories %}
+                        <li><a href="{{ site.url }}/kategorija/{{ category }}">{{ category }}</a></li>
+                        {% endfor %}
+                    </ul> 
                 </li>
                 <li><a href="#">Maximus Erat</a></li>
                 <li><a href="#">Sapien Mauris</a></li>
@@ -40,7 +40,8 @@
                 {% for miniPost in site.posts limit:3 %}
                 <article>
                     <a href="{{ root_url }}{{ miniPost.url }}" class="image"><img src="{{ root_url }}{{ miniPost.featured-image }}" alt="" /></a>
-                    <p><strong>{{ miniPost.title }}</strong><br/>{{ miniPost.subtitle }}</p>
+                    <p><strong><a href="{{ root_url }}{{ miniPost.url }}">{{ miniPost.title }}</a></strong><br/>
+                        {{ miniPost.subtitle }}</p>
                 </article>
                 {% endfor %}
             </div>
