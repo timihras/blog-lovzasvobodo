@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Just for testing purposes 6"
 subtitle: "This is a test subtitle for testing purposes 6"
 description: "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam."
@@ -8,15 +8,14 @@ post-image: /images/pic11.jpg
 date:   2017-07-10 15:29:22 +0200
 categories: 
     - "podjetnistvo" 
-excerpt_separator: <!--more-->
 ---
 
 <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet
     dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur
     id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus
     ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim
-    turpis, hendrerit.</p>
-    <!--more-->
+    turpis, hendrerit.</p> <!--more-->
+   
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
     torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis
     erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis

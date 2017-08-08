@@ -7,8 +7,8 @@ featured-image: /images/financna-svoboda-lovzasvobodo.jpg
 post-image: /images/financna-svoboda-lovzasvobodo-post.jpg
 date:   2017-08-04 11:29:00 +0200
 categories: 
-    - "svoboda" 
-excerpt_separator: <!--more-->
+    - "svoboda"
+tags: [web, svoboda]
 ---
 
 Najbrž si na internetu prebral/a že na tisoče načinov, kako zaslužiti na spletu. Vsak dan me na spletu iz vseh strani oblega vsaj en oglas ali email, ki mi ponuja, da bom obogatel čez noč. Te oglase sem sicer delno uspel ublažiti z Ad Block-om, in čeprav je z njim brskanje po spletu veliko lažje<!--more-->, tudi to orodje ni vsemogočno. Priznam, delno sem kriv tudi sam, saj večkrat pobrskam za načini, kako do kakšnega dodatnega evra.

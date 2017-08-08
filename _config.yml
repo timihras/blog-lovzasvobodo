@@ -10,6 +10,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 disqus_shortname: "lovzasvobodo"
 permalink: /:year/:month/:title
+excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown
@@ -32,18 +33,6 @@ owner:
       link:  "https://instagram.com/lovzasvobodo"
     - title: youtube
       link:  "https://youtube.com/lovzasvobodo"
-
-collections:
-  category:
-    output: true
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: category
-    values:
-      layout: "category"
 
 webrick:
   headers:

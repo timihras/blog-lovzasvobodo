@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Moj največji (ne)uspeh"
 subtitle: "Ta besedna zveza je zelo širok pojem in najbrž si ga vsak predstavlja po svoje."
 description: "Finančna svoboda, besedna zveza ki predstavlja zelo širok pojem. Kaj je to in kako jo razumem jaz."
@@ -8,7 +8,6 @@ post-image: /images/pic11.jpg
 date:   2017-08-04 11:29:00 +0200
 categories: 
     - "podjetnistvo" 
-excerpt_separator: <!--more-->
 ---
 
 Morda lahko, še preden začnem s pisanjem o svoji novi poti, pogledam nekoliko v svojo preteklost. Ali lahko moje pretekle dosežke štejemo kot uspeh ali neuspeh? Res je, do sedaj nisem dosegel rezultata, ki bi prinesel "mega" finančne prihodke, ampak verjamem, da me je vsaka moja poteza v preteklosti nekaj naučila. Na meni je, da iz teh izkušenj vzamem največ. Osebno menim, da se ravno iz neuspeha naučiš največ.<!--more-->

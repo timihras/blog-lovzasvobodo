@@ -19,10 +19,8 @@
                 <li>
                     <span class="opener active">Kategorije</span>
                      <ul>
-                        {% assign sortedCategories = site.categories | sort %}
-                        {% for category in sortedCategories %}
-                        <li><a href="{{ site.url }}/kategorija/{{ category }}">{{ category }}</a></li>
-                        {% endfor %}
+                        {% include categories.html %}
+                        <li><a href="{{ site.url }}/kategorija">Test</a></li>
                     </ul> 
                 </li>
                 <li><a href="#">Maximus Erat</a></li>
@@ -37,13 +35,13 @@
                 <h2>Aktualno // Zanimivo</h2>
             </header>
             <div class="mini-posts">
-                {% for miniPost in site.posts limit:3 %}
+                 {% for miniPost in site.posts limit:3 %}
                 <article>
                     <a href="{{ root_url }}{{ miniPost.url }}" class="image"><img src="{{ root_url }}{{ miniPost.featured-image }}" alt="" /></a>
                     <p><strong><a href="{{ root_url }}{{ miniPost.url }}">{{ miniPost.title }}</a></strong><br/>
                         {{ miniPost.subtitle }}</p>
                 </article>
-                {% endfor %}
+                {% endfor %} 
             </div>
             <ul class="actions">
                 <li><a href="#" class="button">Prebrskaj ostale</a></li>

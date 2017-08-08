@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Just for testing purposes 3"
 subtitle: "This is a test subtitle for testing purposes 3"
 description: "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam."
@@ -8,7 +8,6 @@ post-image: /images/pic11.jpg
 date:   2017-07-14 15:29:22 +0200
 categories: 
     - "svoboda" 
-excerpt_separator: <!--more-->
 ---
 
 <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet
