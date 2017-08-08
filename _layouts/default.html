@@ -1,1 +1,36 @@
-X
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	{% include head.html %}
+</head>
+
+<body>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				{% include header.html %}
+
+				{{ content }}
+
+			</div>
+		</div>
+
+		<!-- Sidebar -->
+		{% include sidebar.html %} 
+
+	</div>
+
+	<!-- Scripts -->
+	{% include scripts.html %}
+
+</body>
+
+</html>

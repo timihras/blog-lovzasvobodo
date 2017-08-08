@@ -25,12 +25,12 @@ owner:
   email: timi@lovzasvobodo.si
   # Social networking links used in footer. Update and remove as you like.
   social: 
+    - title: instagram
+      link:  "https://instagram.com/lovzasvobodo"
     - title: twitter
       link: "https://twitter.com/lovzasvobodo"
     - title: facebook
       link:  "https://facebook.com/lovzasvobodo"
-    - title: instagram
-      link:  "https://instagram.com/lovzasvobodo"
     - title: youtube
       link:  "https://youtube.com/lovzasvobodo"
 

@@ -56,7 +56,8 @@
             <p>{{ site.description }}</p>
             <ul class="contact">
                 <li class="fa-envelope-o"><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-                <li class="fa-instagram"><a href="https://instagram.com/lovzasvobodo">instagram.com/lovzasvobodo</a></li>
+                {% assign social = site.owner.social | first %}
+                <li class="fa-instagram"><a href="{{ social.link }}" target="_blank">{{ social.link | replace: 'https://', '' }}</a></li>
                 <li class="fa-home">Maribor, Slovenija</li>
             </ul>
         </section>

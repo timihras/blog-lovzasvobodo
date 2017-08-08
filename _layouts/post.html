@@ -1,50 +1,19 @@
-<!DOCTYPE HTML>
+---
+layout: default
+---
 
-<html>
+<!-- Content -->
+<section>
+    <header class="main">
+        <h1>{{ page.title }}</h1> 
+    </header>
 
-<head>
-     {% include head.html %} 
-</head>
+        <span class="image main"><img src="{{ root_url }}{{ page.post-image }}" alt="" /></span> 
 
-<body>
+        {{ content }} 
 
-    <!-- Wrapper -->
-    <div id="wrapper">
+</section>
 
-        <!-- Main -->
-        <div id="main">
-            <div class="inner">
-
-                <!-- Header -->
-                 {% include header.html %} 
-
-                <!-- Content -->
-                <section>
-                    <header class="main">
-                        <!-- <h1>{{ page.title }}</h1> -->
-                    </header>
-
-                     <span class="image main"><img src="{{ root_url }}{{ page.post-image }}" alt="" /></span> 
-
-                     {{ content }} 
-
-                </section>
-
-                 {% if site.disqus_shortname %}
-                    {% include disqus_comments.html %}
-                {% endif %} 
-
-            </div>
-        </div>
-
-        <!-- Sidebar -->
-         {% include sidebar.html %} 
-
-    </div>
-
-    <!-- Scripts -->
-     {% include scripts.html %} 
-
-</body>
-
-</html>
+{% if site.disqus_shortname %}
+    {% include disqus_comments.html %}
+{% endif %} 
