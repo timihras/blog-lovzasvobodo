@@ -7,6 +7,11 @@
                 <input type="text" name="query" id="query" placeholder="Search" />
             </form>
         </section>
+        
+        <!-- Logo -->
+        <section id="logo">
+            <span class="icon fa-twitter"></span>
+        </section> 
 
         <!-- Menu -->
         <nav id="menu">
@@ -15,12 +20,11 @@
             </header>
             <ul>
                 <li><a href="{{ site.url }}/">Domov</a></li>
-                <li><a href="{{ site.url }}/">O meni</a></li>
+                <li><a href="{{ site.url }}/o-meni/">O meni</a></li>
                 <li>
                     <span class="opener active">Kategorije</span>
                      <ul>
                         {% include categories.html %}
-                        <li><a href="{{ site.url }}/kategorija">Test</a></li>
                     </ul> 
                 </li>
                 <li><a href="#">Maximus Erat</a></li>

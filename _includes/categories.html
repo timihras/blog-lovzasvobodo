@@ -24,5 +24,5 @@ Categories
 {% endfor %}
 
 {% for category in categories %}
-	<li><a href="{{ site.url }}/kategorija/{{ category | slugify }}"> {{ category }} </a></li>
+	<li><a href="{{ site.url }}/{{ category | slugify | replace: 'š','s' }}"> {{ category }} </a></li>
 {% endfor %}

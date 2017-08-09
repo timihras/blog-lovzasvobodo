@@ -7,7 +7,7 @@ featured-image: /images/pic06.jpg
 post-image: /images/pic11.jpg
 date:   2017-07-10 15:29:22 +0200
 categories: 
-    - "podjetnistvo" 
+    - "podjetništvo" 
 ---
 
 <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet

@@ -1,12 +1,12 @@
 <section id="banner">
     <div class="content">
         <header>
-            <h1><a href="{{ root_url }}{{ featPost.url }}">{{ featPost.title }}</a></h1>
+            <h1><a href="{{ root_url }}{{ featPost.url | downcase }}">{{ featPost.title }}</a></h1>
             <p>{{ featPost.subtitle }}</p>
         </header>
         <p>{{ featPost.excerpt }}</p>
         <ul class="actions">
-            <li><a href="{{ root_url }}{{ featPost.url }}" class="button big">Preberi več</a></li>
+            <li><a href="{{ root_url }}{{ featPost.url | downcase }}" class="button big">Preberi več</a></li>
         </ul>
     </div>
     <span class="image object">
