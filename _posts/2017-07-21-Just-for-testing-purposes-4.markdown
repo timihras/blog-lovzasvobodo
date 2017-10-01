@@ -7,7 +7,7 @@ featured-image: /images/pic04.jpg
 post-image: /images/pic11.jpg
 date:   2017-07-21 16:29:22 +0200
 categories: 
-    - "ati v zagati" 
+    - "ati-v-zagati" 
 ---
 
 <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet

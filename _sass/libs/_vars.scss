@@ -21,24 +21,25 @@
 
 // Font.
 	$font: (
-		family:				('Open Sans', sans-serif),
-		family-heading:		('Roboto Slab', serif),
+		family:				('Roboto', sans-serif),
+		family-heading:		('Roboto', serif),
 		family-fixed:		('Courier New', monospace),
-		weight:				400,
-		weight-bold:		600,
-		weight-heading:		700,
-		weight-heading-alt:	400,
+		weight:				300,
+		weight-bold:		700,
+		weight-heading:		300,
+		weight-heading-alt:	700,
 		kerning-heading:	0.075em
 	);
 
 // Palette.
 	$palette: (
 		bg:					#ffffff,
-		bg-alt:				#f5f6f7,
-		fg:					#7f888f,
-		fg-bold:			#3d4449,
-		fg-light:			#9fa3a6,
+		bg-alt:				#f2f2f2,
+		fg:					#474645,
+		fg-bold:			#474645,
+		fg-light:			#5D5D5D,
 		border:				rgba(210,215,217,0.75),
 		border-bg:			transparentize(#e6ebed, 0.75),
-		accent:				#f56a6a
+		// accent:				#f39c12
+		accent:				#FFA21F
 	);

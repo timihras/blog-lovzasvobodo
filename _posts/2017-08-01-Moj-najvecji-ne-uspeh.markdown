@@ -7,7 +7,7 @@ featured-image: /images/pic01.jpg
 post-image: /images/pic11.jpg
 date:   2017-08-04 11:29:00 +0200
 categories: 
-    - "podjetništvo" 
+    - "podjetnistvo" 
 ---
 
 Morda lahko, še preden začnem s pisanjem o svoji novi poti, pogledam nekoliko v svojo preteklost. Ali lahko moje pretekle dosežke štejemo kot uspeh ali neuspeh? Res je, do sedaj nisem dosegel rezultata, ki bi prinesel "mega" finančne prihodke, ampak verjamem, da me je vsaka moja poteza v preteklosti nekaj naučila. Na meni je, da iz teh izkušenj vzamem največ. Osebno menim, da se ravno iz neuspeha naučiš največ.<!--more-->

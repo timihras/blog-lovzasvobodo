@@ -4,7 +4,7 @@ layout: default
 
 
 <!-- Banner -->
-{% assign featPost = site.posts.first %}
+{% assign featPost = site.posts.last %}
 {% include banner.html %}
 
 <!-- Section -->
@@ -19,6 +19,22 @@ layout: default
 				<h3>Podjetništvo in finance</h3>
 				<p>Moj največji cilj je, da živim dobro življenje. Življenje polno pozitivnih trenutkov, kjer lahko 
 					veliko časa namenim svoji družini in v katerem lahko družini zagotovim soliden standard življenja.</p>
+			</div>
+		</article>
+		<article>
+			<span class="icon fa-desktop"></span>
+			<div class="content">
+				<h3>Splet in design</h3>
+				<p>France Prešeren bi tako opisal svojo Julijo, jaz tako pišem o oblikovanju. Design in prenos mojih kreacij
+					v realnost je moja ljubezen. Spletne strani, uporabniška izkušnja, animacije, raziskave in več.</p>
+			</div>
+		</article>
+		<article>
+			<span class="icon fa-child"></span>
+			<div class="content">
+				<h3>Ati v zagati</h3>
+				<p>10. avgusta leta 2017 je v moj življenje prišel moj sin Lukas. To je trenutek, ki zame predstavlja 
+					veliko prelomnico življenja. Po dolgem času v življenju nimam pojma kaj delam. Se pa trudim.</p>
 			</div>
 		</article>
 		<article>
@@ -42,7 +58,7 @@ layout: default
 		<article>
 			<a href="{{ root_url }}{{ post.url | downcase }}" class="image"><img src="{{ root_url }}{{ post.featured-image }}" alt="" /></a>
 			<h3><a href="{{ root_url }}{{ post.url | downcase }}">{{ post.title }}</a></h3>
-			<p>{{ post.excerpt }}</p>
+			<p>{{ post.content | strip_html | truncatewords: 30 }}</p>
 			<ul class="actions">
 				<li><a href="{{ root_url }}{{ post.url | downcase }}" class="button">Preberi več</a></li>
 			</ul>

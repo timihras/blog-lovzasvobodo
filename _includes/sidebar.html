@@ -7,29 +7,26 @@
                 <input type="text" name="query" id="query" placeholder="Search" />
             </form>
         </section>
-        
-        <!-- Logo -->
-        <section id="logo">
-            <span class="icon fa-twitter"></span>
-        </section> 
 
         <!-- Menu -->
         <nav id="menu">
             <header class="major">
-                <h2>Menu</h2>
+                <h2>Navigacija</h2>
             </header>
             <ul>
                 <li><a href="{{ site.url }}/">Domov</a></li>
-                <li><a href="{{ site.url }}/o-meni/">O meni</a></li>
+                <li><a href="{{ site.url }}/#">Začni tukaj</a></li>
                 <li>
                     <span class="opener active">Kategorije</span>
                      <ul>
-                        {% include categories.html %}
+                        <li><a href="{{ site.url }}/ati-v-zagati">Ati v zagati</a></li>
+                        <li><a href="{{ site.url }}/podjetnistvo">Podjetništvo</a></li>
+                        <li><a href="{{ site.url }}/splet-in-design">Splet in design</a></li>
                     </ul> 
                 </li>
-                <li><a href="#">Maximus Erat</a></li>
-                <li><a href="#">Sapien Mauris</a></li>
-                <li><a href="#">Amet Lacinia</a></li>
+                <li><a href="#">Brezplačno</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Kontakt</a></li>
             </ul>
         </nav>
 
@@ -39,17 +36,14 @@
                 <h2>Aktualno // Zanimivo</h2>
             </header>
             <div class="mini-posts">
-                 {% for miniPost in site.posts limit:3 %}
+                 {% for post in site.posts limit:3 %}
                 <article>
-                    <a href="{{ root_url }}{{ miniPost.url }}" class="image"><img src="{{ root_url }}{{ miniPost.featured-image }}" alt="" /></a>
-                    <p><strong><a href="{{ root_url }}{{ miniPost.url }}">{{ miniPost.title }}</a></strong><br/>
-                        {{ miniPost.subtitle }}</p>
+                    <a href="{{ root_url }}{{ post.url }}" class="image"><img src="{{ root_url }}{{ post.featured-image }}" alt="" /></a>
+                    <p>{{ post.content | strip_html | truncatewords: 20 }}</p>
                 </article>
                 {% endfor %} 
             </div>
-            <ul class="actions">
-                <li><a href="#" class="button">Prebrskaj ostale</a></li>
-            </ul>
+            <br/><br/><p><a href="{{ root_url }}/#" class="button fit">Prebrskaj ostale</a></p>
         </section>
 
         <!-- Section -->

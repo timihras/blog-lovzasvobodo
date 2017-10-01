@@ -5,37 +5,41 @@ type: archive
 
 <section>
   <header class="main">
-    <h1 class="archive-title">Kategorija {{ page.category }}</h1>
+    <h2 class="archive-title">Kategorija {{ page.title }}</h2>
   </header>
   {{ content }}
 </section>
 
-
-
-<div class="wrap">
 {% if site.categories[page.category] %}
-  <div class="group-year">
-    {% for post in site.categories[page.category] %}
-      <section id="category-page">
-        
-        <span class="image object">
-            <img src="{{ root_url }}{{ post.featured-image }}" alt="" />
-        </span>
-          
-        <div class="content">
-            <header>
-                <h2><a href="{{ root_url }}{{ post.url | downcase }}">{{ post.title }}</a></h2>
-                <p>{{ post.subtitle }}</p>
-            </header>
-            <p>{{ post.excerpt }}</p>
-            <ul class="actions">
-                <li><a href="{{ root_url }}{{ post.url | downcase }}" class="button big">Preberi več</a></li>
-            </ul>
-        </div>
-      </section>
+<section>
+  <div class="posts">
+    {% for post in paginator.posts %}
+    <article>
+      <a href="{{ root_url }}{{ post.url | downcase }}" class="image"><img src="{{ root_url }}{{ post.featured-image }}" alt="" /></a>
+      <h3><a href="{{ root_url }}{{ post.url | downcase }}">{{ post.title }}</a></h3>
+      <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
+      <ul class="actions">
+        <li><a href="{{ root_url }}{{ post.url | downcase }}" class="button">Preberi več</a></li>
+      </ul>
+    </article>
     {% endfor %}
   </div>
+</section>
 {% else %}
-  <p>V tej kategoriji ne obstaja noben prispevek. Vrni se v kratkem, ko bo zagotovo kaj novega.</p>
+<p>V tej kategoriji ne obstaja noben prispevek. Vrni se v kratkem, ko bo zagotovo kaj novega.</p>
 {% endif %}
-</div>
+
+{% if paginator.total_pages > 1 %}
+<ul class="pagination">
+  {% if paginator.previous_page %}
+    <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button">&larr; Prejšnja stran</a></li>
+  {% else %}
+    <li><span class="button disabled">&larr; Prejšnja stran</span></li>
+  {% endif %}
+  {% if paginator.next_page %}
+    <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button">Naslednja stran &rarr;</a></li>
+  {% else %}
+    <li><span class="button disabled">Naslednja stran &rarr;</span></li>
+  {% endif %}
+</ul>
+{% endif %}

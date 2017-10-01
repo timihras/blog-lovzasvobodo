@@ -7,7 +7,7 @@ featured-image: /images/pic05.jpg
 post-image: /images/pic11.jpg
 date:   2017-07-18 15:29:22 +0200
 categories: 
-    - "svoboda" 
+    - "splet-in-design" 
 ---
 
 <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet
