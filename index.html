@@ -2,10 +2,24 @@
 layout: default
 ---
 
-
-<!-- Banner -->
+<!-- Featured Post -->
 {% assign featPost = site.posts.last %}
-{% include banner.html %}
+
+<section id="banner">
+    <div class="content">
+        <header>
+            <h1><a href="{{ root_url }}{{ featPost.url | downcase }}">{{ featPost.title }}</a></h1>
+            <p>{{ featPost.subtitle }}</p>
+        </header>
+        <p>{{ featPost.excerpt }}</p>
+        <ul class="actions">
+            <li><a href="{{ root_url }}{{ featPost.url | downcase }}" class="button big">Preberi več</a></li>
+        </ul>
+    </div>
+    <span class="image object">
+        <img src="{{ root_url }}{{ featPost.featured-image }}" alt="" />
+    </span>
+</section>
 
 <!-- Section -->
 <section>
@@ -54,10 +68,11 @@ layout: default
 		<h2>Izpostavljeni prispevki, ki bi te lahko zanimali..</h2>
 	</header>
 	<div class="posts">
-		{% for post in site.posts offset: 1 limit:6 %}
+		{% for post in site.posts limit:6 %}
 		<article>
 			<a href="{{ root_url }}{{ post.url | downcase }}" class="image"><img src="{{ root_url }}{{ post.featured-image }}" alt="" /></a>
-			<h3><a href="{{ root_url }}{{ post.url | downcase }}">{{ post.title }}</a></h3>
+            <h3><a href="{{ root_url }}{{ post.url | downcase }}">{{ post.title }}</a></h3>
+            <time datetime="{{ page.date | date_to_xmlschema }}">Obljavljeno: {% include slo_date.html %}</time>
 			<p>{{ post.content | strip_html | truncatewords: 30 }}</p>
 			<ul class="actions">
 				<li><a href="{{ root_url }}{{ post.url | downcase }}" class="button">Preberi več</a></li>
