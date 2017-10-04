@@ -1,0 +1,8 @@
+{% assign months = "januar|februar|marec|april|maj|junij|julij|avgust|september|october|november|december" | split: "|" %}
+{% assign m = include.date | date: "%-m" | minus: 1 %}
+{% assign day = include.date | date: "%d" %}
+{% assign month = months[m] %}
+{% assign year = include.date | date: "%Y" %}
+
+<!-- {{ day }}. {{ month }} {{ year }} -->
+<div class="post-date">Obljavljeno: <time datetime="{{include.post.date | date:"%Y-%m-%d"}}" pubdate>{{ day }}. {{ month }} {{ year }}</time></div>

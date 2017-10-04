@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Welcome to jekyll"
 subtitle: "Welcome to jekyll, Interdum et malesuada"
 description: "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam."

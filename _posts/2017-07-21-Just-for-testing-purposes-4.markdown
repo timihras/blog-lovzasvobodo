@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Just for testing purposes 4"
 subtitle: "This is a test subtitle for testing purposes 4"
 description: "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam."

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Ati v zagati"
 subtitle: "Kako je, ko prvič držiš svojega otroka"
 description: "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam."

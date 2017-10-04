@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Moj največji (ne)uspeh"
 subtitle: "Ta besedna zveza je zelo širok pojem in najbrž si ga vsak predstavlja po svoje."
 description: "Finančna svoboda, besedna zveza ki predstavlja zelo širok pojem. Kaj je to in kako jo razumem jaz."

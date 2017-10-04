@@ -14,14 +14,9 @@ type: archive
 <section>
   <div class="posts">
     {% for post in paginator.posts %}
-    <article>
-      <a href="{{ root_url }}{{ post.url | downcase }}" class="image"><img src="{{ root_url }}{{ post.featured-image }}" alt="" /></a>
-      <h3><a href="{{ root_url }}{{ post.url | downcase }}">{{ post.title }}</a></h3>
-      <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
-      <ul class="actions">
-        <li><a href="{{ root_url }}{{ post.url | downcase }}" class="button">Preberi več</a></li>
-      </ul>
-    </article>
+
+    {% include post.html %}
+
     {% endfor %}
   </div>
 </section>
