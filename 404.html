@@ -1,24 +1,80 @@
+--- 
+layout: default 
 ---
-layout: default
----
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<!-- Content -->
+<section class="row 200%">
+  <div class="6u 12u$(medium)">
+    <header class="main">
+      <h1>Ojej! Iskane strani ni mogoče najti. 😕😕</h1>
+    </header>
+    <p>Koda napake: 404.</p>
+    <h3>Uporabi katero od spodnjih povezav:</h3>
+    <div class="row 200%">
+      <div class="4u center"><a href="{{ site.url }}/">Domov</a></div>
+      <div class="4u center"><a href="{{ site.url }}/zacni-tukaj">Začni tukaj</a></div>
+      <div class="4u$ center"><a href="{{ site.url }}/storitve">Storitve</a></div>
+    </div>
+  </div>
+  <div class="6u$ 12u$(medium)">
+      <span class="image fit" style="padding: 0 8em;">
+        <img src="{{site.url}}/images/404_lovzasvobodo.png" alt=""></span>
+  </div>
+</section>
 
-<div class="container">
-  <h1>404</h1>
+<section>
+  <div class="6u$ 12u$(medium) center">
+    <div id="mlb2-6323259" class="ml-subscribe-form ml-subscribe-form-6323259">
+      <div class="ml-vertical-align-center">
+        <div class="subscribe-form ml-block-success" style="display:none">
+          <div class="form-section">
+            <h2>Hvala! Potrditev te že čaka na emailu. Nov e-mail lahko pričakuješ, ko objavim kaj novega. Se tipkava! 😉</h2>
+          </div>
+        </div>
+        <form class="ml-block-form" action="https://app.mailerlite.com/webforms/submit/f2e4d2" data-id="588179" data-code="f2e4d2"
+          method="POST" target="_blank">
+          <div class="subscribe-form">
+            <div class="form-section">
+              <h2>Prijava na email obvestila</h2>
+            </div>
+            <div class="form-section">
+              <div class="form-group ml-field-email ml-validate-required ml-validate-email">
+                <input type="email" name="fields[email]" class="form-control" placeholder="Vpiši svoj email*" value="" autocomplete="email" x-autocompletetype="email"
+                  spellcheck="false" autocapitalize="off" autocorrect="off">
+              </div>
+            </div>
+            <input type="hidden" name="ml-submit" value="1" />
+            <button type="submit" class="special primary">Prijava na obvestila</button>
+            <button disabled="disabled" style="display: none;" type="button" class="special loading">
+                <img src="https://static.mailerlite.com/images/rolling@2x.gif" width="20" height="20" style="width: 20px; height: 20px; vertical-align: middle;">
+            </button>
+          </div>
+        </form>
+        <p><small>Brez spama. Obljubim.</small></p>
+        <script>
+          function ml_webform_success_6323259() {
+            var $ = ml_jQuery || jQuery;
 
-  <p><strong>Strani ni mogoče najti :(</strong></p>
-  <p>Uporabi iskalnik ali se vrni na <a href="{{ site.url }}/">domačo stran</a>.</p>
-</div>
+            $('.ml-subscribe-form-6323259 .ml-block-success').show();
+            $('.ml-subscribe-form-6323259 .ml-block-form').hide();
+          };
+        </script>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://static.mailerlite.com/js/w/webforms.min.js?v3772b61f1ec61c541c401d4eadfdd02f"></script>
+  </div>
+</section>
+
+<!-- Section -->
+<section>
+    <header class="major">
+      <h2>Izpostavljeni prispevki, ki bi te lahko zanimali..</h2>
+    </header>
+    <div class="posts">
+      {% for post in site.posts limit:6 %}
+  
+      {% include post.html %}
+  
+      {% endfor %}
+    </div>
+  </section>
