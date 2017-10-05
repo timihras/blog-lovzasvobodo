@@ -8,7 +8,7 @@ layout: default
         <h1>{{ page.title }}</h1>
     </header>
     {% include post_date.html date=page.date %}
-    <span class="image main"><img src="{{ root_url }}{{ page.post-image }}" alt="" /></span> 
+    <span class="image main"><img src={{ "assets/img/p/" | prepend: site.baseurl | append : page.image}} alt="{{page.title}}"></span> 
 
     {{ content }} 
 </section>

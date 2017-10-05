@@ -1,10 +1,8 @@
 ---
 layout: post
 title:  "Just for testing purposes 2"
-subtitle: "This is a test subtitle for testing purposes 2"
 description: "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam."
-featured-image: /images/pic02.jpg
-post-image: /images/pic11.jpg
+image: pic11.jpg
 date:   2017-07-17 15:29:22 +0200
 categories: 
     - "ati-v-zagati" 

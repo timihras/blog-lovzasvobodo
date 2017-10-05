@@ -38,7 +38,7 @@
             <div class="mini-posts">
                  {% for post in site.posts limit:3 %}
                 <article>
-                    <a href="{{ root_url }}{{ post.url }}" class="image"><img src="{{ root_url }}{{ post.featured-image }}" alt="" /></a>
+                    <a href="{{ root_url }}{{ post.url }}" class="image"><img src={{ "assets/img/f/" | prepend: site.baseurl | append : post.image}} alt="{{post.title}}"></a>
                     <p>{{ post.content | strip_html | truncatewords: 20 }}</p>
                 </article>
                 {% endfor %} 
@@ -54,7 +54,7 @@
             <p>{{ site.description }}</p>
             <ul class="contact">
                 <li class="fa-envelope-o"><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-                {% assign social = site.owner.social | first %}
+                {% assign social = site.social | first %}
                 <li class="fa-instagram"><a href="{{ social.link }}" target="_blank">{{ social.link | replace: 'https://', '' }}</a></li>
                 <li class="fa-home">Maribor, Slovenija</li>
             </ul>

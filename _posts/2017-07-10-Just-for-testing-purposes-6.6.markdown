@@ -1,10 +1,8 @@
 ---
 layout: post
 title:  "Just for testing purposes 6"
-subtitle: "This is a test subtitle for testing purposes 6"
 description: "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam."
-featured-image: /images/pic06.jpg
-post-image: /images/pic11.jpg
+image: pic11.jpg
 date:   2017-07-10 15:29:22 +0200
 categories: 
     - "splet-in-design" 

@@ -3,8 +3,7 @@ layout: post
 title:  "Pozdravljeni!"
 subtitle: "DESIGN, PODJETNIŠTVO, DRUŽINA."
 description: "Finančna svoboda, besedna zveza ki predstavlja zelo širok pojem. Kaj je to in kako jo razumem jaz."
-featured-image: /images/f/financna-svoboda-lovzasvobodo.jpg
-post-image: /images/p/financna-svoboda-lovzasvobodo.jpg
+image: financna-svoboda-lovzasvobodo.jpg
 date:   2017-01-01 00:00:00 +0200
 ---
 

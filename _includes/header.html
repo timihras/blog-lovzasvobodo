@@ -3,7 +3,7 @@
     <a href="{{ root_url }}/" class="logo"><strong>{{ site.title }}</strong>, piše {{ site.author }}</a>
 
     <ul class="icons">
-        {% for item in site.owner.social %}
+        {% for item in site.social %}
         <li><a href="{{ item.link }}" class="icon fa-{{ item.title }}" target="_blank"><span class="label">{{ item.title }}</span></a></li>
         {% endfor %}
     </ul>

@@ -1,10 +1,8 @@
 ---
 layout: post
 title:  "Moj največji (ne)uspeh"
-subtitle: "Ta besedna zveza je zelo širok pojem in najbrž si ga vsak predstavlja po svoje."
 description: "Finančna svoboda, besedna zveza ki predstavlja zelo širok pojem. Kaj je to in kako jo razumem jaz."
-featured-image: /images/pic01.jpg
-post-image: /images/pic11.jpg
+image: pic01.jpg
 date:   2017-08-04 11:29:00 +0200
 categories: 
     - "podjetnistvo" 

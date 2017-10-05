@@ -3,21 +3,21 @@ layout: default
 ---
 
 <!-- Featured Post -->
-{% assign featPost = site.posts.last %}
+{% assign post = site.posts.last %}
 
 <section id="banner">
     <div class="content">
         <header>
-            <h1><a href="{{ root_url }}{{ featPost.url | downcase }}">{{ featPost.title }}</a></h1>
-            <p>{{ featPost.subtitle }}</p>
+            <h1><a href="{{ root_url }}{{ post.url | downcase }}">{{ post.title }}</a></h1>
+            <p>{{ post.subtitle }}</p>
         </header>
-        <p>{{ featPost.excerpt }}</p>
+        <p>{{ post.excerpt }}</p>
         <ul class="actions">
-            <li><a href="{{ root_url }}{{ featPost.url | downcase }}" class="button big">Preberi več</a></li>
+            <li><a href="{{ root_url }}{{ post.url | downcase }}" class="button big">Preberi več</a></li>
         </ul>
     </div>
     <span class="image object">
-        <img src="{{ root_url }}{{ featPost.featured-image }}" alt="" />
+		<img src={{ "assets/img/f/" | prepend: site.baseurl | append : post.image}} alt="{{post.title}}">
     </span>
 </section>
 

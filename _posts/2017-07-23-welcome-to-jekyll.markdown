@@ -1,10 +1,8 @@
 ---
 layout: post
 title:  "Welcome to jekyll"
-subtitle: "Welcome to jekyll, Interdum et malesuada"
 description: "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam."
-featured-image: /images/pic01.jpg
-post-image: /images/pic11.jpg
+image: pic01.jpg
 date:   2017-07-23 15:29:22 +0200
 categories: 
     - "splet-in-design" 
