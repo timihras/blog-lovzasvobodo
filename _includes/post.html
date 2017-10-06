@@ -1,5 +1,5 @@
 <article>
-    <a href="{{ root_url }}{{ post.url | downcase }}" class="image"><img src={{ "assets/img/f/" | prepend: site.baseurl | append : post.image}} alt="{{post.title}}"></a>
+    <a href="{{ root_url }}{{ post.url | downcase }}" class="image"><img src={{ "/assets/img/f/" | prepend: site.baseurl | append: post.image }} alt="{{post.title}}"></a>
     <h3><a href="{{ root_url }}{{ post.url | downcase }}">{{ post.title }}</a></h3>
     {% include post_date.html date=post.date %}
     <p>{{ post.content | strip_html | truncatewords: 30 }}</p>

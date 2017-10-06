@@ -1,4 +1,4 @@
-<title>{{ site.title }}, piše {{ site.author }}</title>
+<title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <!--[if lte IE 8]><script src="{{ '/assets/assets/js/ie/html5shiv.js' | prepend: site.baseurl }}"></script><![endif]-->
