@@ -14,18 +14,18 @@
                 <h2>Navigacija</h2>
             </header>
             <ul>
-                <li><a href="{{ site.url }}/">Domov</a></li>
-                <li><a href="{{ site.url }}/zacni-tukaj">Začni tukaj</a></li>
+                <li><a href="{{ site.url }}">Domov</a></li>
+                <li><a href="{{ '/zacni-tukaj' | prepend: site.url }}">Začni tukaj</a></li>
                 <li>
                     <span class="opener active">Kategorije</span>
                      <ul>
-                        <li><a href="{{ site.url }}/ati-v-zagati">Ati v zagati</a></li>
-                        <li><a href="{{ site.url }}/podjetnistvo">Podjetništvo</a></li>
-                        <li><a href="{{ site.url }}/splet-in-design">Splet in design</a></li>
+                        <li><a href="{{ '/ati-v-zagati' | prepend: site.url }}">Ati v zagati</a></li>
+                        <li><a href="{{ '/podjetnistvo' | prepend: site.url }}">Podjetništvo</a></li>
+                        <li><a href="{{ '/splet-in-design' | prepend: site.url }}">Splet in design</a></li>
                     </ul> 
                 </li>
-                <li><a href="{{ site.url }}/brezplacno">Brezplačno</a></li>
-                <li><a href="{{ site.url }}/storitve">Portfolio</a></li>
+                <li><a href="{{ '/brezplacno' | prepend: site.url }}">Brezplačno</a></li>
+                <li><a href="{{ '/storitve' | prepend: site.url }}">Portfolio</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
         </nav>
@@ -38,7 +38,7 @@
             <div class="mini-posts">
                  {% for post in site.posts limit:3 %}
                 <article>
-                    <a href="{{ site.url }}{{ post.url }}" class="image">
+                    <a href="{{ post.url | prepend: site.url }}" class="image">
                         <img src={{ "/assets/img/f/" | prepend: site.url | append: post.image}} 
                             alt="{{post.title}}">
                     </a>
@@ -46,7 +46,7 @@
                 </article>
                 {% endfor %} 
             </div>
-            <br/><br/><p><a href="{{ site.url }}/#" class="button fit">Prebrskaj ostale</a></p>
+            <br/><br/><p><a href="{{ site.url }}" class="button fit">Prebrskaj ostale</a></p>
         </section>
 
         <!-- Section -->
@@ -56,7 +56,7 @@
             </header>
             <p>{{ site.description }}</p>
             <ul class="contact">
-                <li class="fa-envelope-o"><a href="mailto:{{ site.email }}">{{ site.email | replace: '@', '[at]'  }}</a></li>
+                <li class="fa-envelope-o"><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
                 {% assign social = site.social | first %}
                 <li class="fa-instagram"><a href="{{ social.link }}" target="_blank">{{ social.link | replace: 'https://', '' }}</a></li>
                 <li class="fa-home">Maribor, Slovenija</li>

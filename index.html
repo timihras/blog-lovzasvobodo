@@ -8,23 +8,23 @@ layout: default
 <section id="banner">
     <div class="content">
         <header>
-            <h1><a href="{{ root_url }}{{ post.url | downcase }}">{{ post.title }}</a></h1>
+            <h1><a href="{{ post.url | downcase | prepend: site.url }}">{{ post.title }}</a></h1>
             <p>{{ post.subtitle }}</p>
         </header>
         <p>{{ post.excerpt }}</p>
         <ul class="actions">
-            <li><a href="{{ root_url }}{{ post.url | downcase }}" class="button big">Preberi več</a></li>
+            <li><a href="{{ post.url | downcase | prepend: site.url }}" class="button big">Preberi več</a></li>
         </ul>
     </div>
     <span class="image object">
-		<img src={{ "assets/img/f/" | prepend: site.baseurl | append: post.image}} alt="{{post.title}}">
+		<img src="{{ '/assets/img/f/' | prepend: site.url | append: post.image }}" alt="{{ post.title }}">
     </span>
 </section>
 
 <!-- Section -->
 <section>
 	<header class="major">
-		<h2>Zakaj lov za svobodo?!</h2>
+		<h2>Kaj najdeš na tej strani?!</h2>
 	</header>
 	<div class="features">
 		<article>
