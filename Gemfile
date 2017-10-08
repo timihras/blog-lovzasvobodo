@@ -18,16 +18,16 @@ gem "jekyll", "3.5.1"
 # gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
-# group :jekyll_plugins do
-#    gem "jekyll-feed", "~> 0.6"
-#    gem "jekyll-sitemap", "~> 0.6"
 
+group :jekyll_plugins do
     gem 'jekyll-paginate', '~> 1.1'
     gem 'jekyll-paginate-v2', '~> 1.9'
-    gem 'jekyll-watch'
+    gem 'algoliasearch-jekyll', '~> 0.8.2'
     gem 'jekyll-sitemap'
-# end
+end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# gem 'wdm', '>= 0.1.1' if Gem.win_platform?
 

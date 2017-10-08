@@ -1,0 +1,14 @@
+
+/* Search */
+
+.inner {
+    opacity: 1;
+	height: auto;
+	transition: opacity 1s ease-in-out;
+}
+
+.s-inactive {
+    opacity: 0; 
+    height: 0;
+    overflow: hidden;
+}

@@ -13,13 +13,17 @@
 
 		<!-- Main -->
 		<div id="main">
-			<div class="inner">
+			<div class="inner search-results s-inactive" id="search-results">
+				<!-- Header -->
+				{% include header.html %}
+				{% include search_results.html %}
+			</div>
+			<div class="inner main-content" id="main-content">
 
 				<!-- Header -->
 				{% include header.html %}
 
 				{{ content }}
-
 			</div>
 		</div>
 

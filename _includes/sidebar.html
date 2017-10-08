@@ -2,7 +2,7 @@
     <div class="inner">
 
         <!-- Search -->
-        <section id="search" class="alt">
+        <section id="site-search" class="alt">
             <form method="post" action="#">
                 <input type="text" name="query" id="query" placeholder="Iskanje po strani" />
             </form>
@@ -38,12 +38,15 @@
             <div class="mini-posts">
                  {% for post in site.posts limit:3 %}
                 <article>
-                    <a href="{{ root_url }}{{ post.url }}" class="image"><img src={{ "assets/img/f/" | prepend: site.baseurl | append: post.image}} alt="{{post.title}}"></a>
+                    <a href="{{ site.url }}{{ post.url }}" class="image">
+                        <img src={{ "/assets/img/f/" | prepend: site.url | append: post.image}} 
+                            alt="{{post.title}}">
+                    </a>
                     <p>{{ post.content | strip_html | truncatewords: 20 }}</p>
                 </article>
                 {% endfor %} 
             </div>
-            <br/><br/><p><a href="{{ root_url }}/#" class="button fit">Prebrskaj ostale</a></p>
+            <br/><br/><p><a href="{{ site.url }}/#" class="button fit">Prebrskaj ostale</a></p>
         </section>
 
         <!-- Section -->

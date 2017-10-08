@@ -7,7 +7,7 @@ description: >
 baseurl: "" 
 url: "" 
 permalink: /:categories/:title
-excerpt_separator: <!--more-->
+excerpt_separator: /n/n
 
 # Author information
 author: Timi Hraš
@@ -31,11 +31,13 @@ disqus_shortname: "lovzasvobodo"
 
 # Build settings
 include: ["_categories","_pages"]
+
 markdown: kramdown
 plugins:
-- jekyll-paginate
-- jekyll-paginate-v2
-- jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+  - algoliasearch-jekyll
 
 webrick:
   headers:
@@ -63,3 +65,12 @@ pagination:
   extension: html
   indexpage: 'index'
 # END Pagnation
+
+algolia:
+  application_id: 'U2844T0XPB'
+  index_name: 'jekyll'
+  read_only_api_key: 'ae67e6db952292c89967279f9e374b3e'
+  excluded_files:
+    - 404.html
+    - index.html
+    - pages/elementi.html

@@ -283,3 +283,75 @@
 	});
 
 })(jQuery);
+
+/****** Algolia Search ******/
+$(function(config) {
+	'use strict';
+
+
+	function handleSearch (e) {
+	// console.log(searchResults);
+	// console.log(mainContent);
+
+		if (e.target.value.length < 3) {
+			searchResults.classList.add('s-inactive');
+			mainContent.classList.remove('s-inactive');
+			return;
+		};
+		mainContent.classList.add('s-inactive');
+		searchResults.classList.remove('s-inactive');
+
+		var applicationId = config.applicationId;
+		var apiKey = config.apiKey;
+		var indexName = config.indexName;
+
+		const client = algoliasearch(applicationId, apiKey);
+		const index = client.initIndex(indexName);
+
+		function strip(html)
+		{
+		   var tmp = document.createElement("DIV");
+		   tmp.innerHTML = html;
+		   return tmp.textContent || tmp.innerText || "";
+		}
+
+		index.search({query: e.target.value}, function searchDone(err, content) {
+			if(err) {
+				console.log(err);
+				return;
+			}
+
+			let searchResult = content.hits
+				.filter(hit => hit.type === "document")
+				.map((post) => {
+
+					const link = (config.baseurl + post.url).toLowerCase();
+					const excerpt = strip(post.excerpt).split(/\s+/).slice(0,30).join(" ");;
+					const html = 
+					`
+					<article>
+						<a href="${link}" class="image"><img src="${config.baseurl}/assets/img/f/${post.image}" alt="${post.title}"></a>
+						<h3><a href="${link}">${post.title}</a></h3>
+						<p>${excerpt}...</p>
+						<ul class="actions">
+							<li><a href="${link}" class="button">Preberi več</a></li>
+						</ul>
+					</article>
+					`
+					return html;
+				}).join('');
+			searchOutput.innerHTML = searchResult;
+
+		});
+	}
+
+	const mainContent = document.getElementById('main-content');
+	const searchResults = document.getElementById('search-results');
+	const searchOutput = document.getElementById('search-output');
+	const searchInput = document.getElementById('site-search');
+	searchInput.addEventListener('keyup', handleSearch);
+
+
+
+
+}(window.ALGOLIA_CONFIG));
