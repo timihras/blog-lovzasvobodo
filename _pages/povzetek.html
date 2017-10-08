@@ -1,0 +1,21 @@
+--- 
+layout: default 
+title: "Povzetek kategorij" 
+permalink: /povzetek/ 
+---
+<section>
+    {% for category in site.categories %}
+    {% capture cat %}{{ category | first }}{% endcapture %}
+    <header class="major">
+        <h2>Kategorija {{ cat | capitalize | replace: '-', ' ' }}</h2>
+    </header>
+
+    <div class="posts">
+    {% for post in site.categories[cat] limit: 3 %}
+        {% include post.html %}
+    {% endfor %}
+    </div>
+
+    {% if forloop.last == false %}<hr>{% endif %}
+    {% endfor %}
+</section>
