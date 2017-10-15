@@ -2,3 +2,11 @@
     margin: auto;
     text-align: center;
 }
+
+.post-date span {
+    padding: 0 1em 0 0;
+
+    .fa {
+        padding: 0.5em;
+    }
+}

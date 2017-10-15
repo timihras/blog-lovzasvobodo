@@ -6,12 +6,16 @@ description: >
   moja zgodba, moje izkušnje in lov za iskanjem svobode. 
 baseurl: "" 
 url: "" 
-permalink: /:categories/:title
+permalink: /:title
 excerpt_separator: /n/n
+
+# SEO Information
+lang: "sl_SI"
 
 # Author information
 author: Timi Hraš
 email: hi@lovzasvobodo.si
+
 
 social: 
   - title: instagram
@@ -42,6 +46,9 @@ plugins:
 webrick:
   headers:
     Access-Control-Allow-Origin: "*"
+
+sass:
+  style: compressed
 # END Build settings
 
 

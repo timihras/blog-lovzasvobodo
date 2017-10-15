@@ -1,0 +1,43 @@
+<!-- SEO start -->
+<title>{%if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+<link rel="canonical" href="{{ page.url | prepend: site.url }}">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+
+<meta property="og:locale" content="{{site.lang}}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ '/assets/img/f/' | prepend: site.url | append: page.image }}" />
+<meta property="og:site_name" content="{%if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="article:publisher" content="http://www.facebook.com/lovzasvobodo" />
+<meta property="article:author" content="https://www.facebook.com/timi.hras" />
+<meta property="article:published_time" content="{{ page.date }}" />
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{%if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:site" content="@lovzasvobodo" />
+<meta name="twitter:creator" content="@timihras">
+<meta name="twitter:card" content="summary">
+
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ '/assets/img/favicon/apple-touch-icon-60x60.png' | prepend: site.url }}" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ '/assets/img/favicon/apple-touch-icon-114x114.png' | prepend: site.url }}" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/assets/img/favicon/apple-touch-icon-144x144.png' | prepend: site.url }}" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ '/assets/img/favicon/apple-touch-icon-152x152.png' | prepend: site.url }}" />
+
+<link rel="icon" type="image/png" href="{{ '/assets/img/favicon/favicon-16x16.png' | prepend: site.url }}" sizes="16x16" />
+<link rel="icon" type="image/png" href="{{ '/assets/img/favicon/favicon-32x32.png' | prepend: site.url }}" sizes="32x32" />
+<link rel="icon" type="image/png" href="{{ '/assets/img/favicon/favicon-128.png' | prepend: site.url }}" sizes="128x128" />
+
+<meta name="application-name" content="Lov za svobodo, piše Timi Hraš"/>
+<meta name="msapplication-TileColor" content="#F2F2F2" />
+<meta name="msapplication-TileImage" content="{{ '/assets/img/favicon/mstile-144x144.png' | prepend: site.url }}" />
+<meta name="msapplication-square70x70logo" content="{{ '/assets/img/favicon/mstile-70x70.png' | prepend: site.url }}" />
+<meta name="msapplication-square150x150logo" content="{{ '/assets/img/favicon/mstile-150x150.png' | prepend: site.url }}" />
+<meta name="msapplication-wide310x150logo" content="{{ '/assets/img/favicon/mstile-310x150.png' | prepend: site.url }}" />
+<meta name="msapplication-square310x310logo" content="{{ '/assets/img/favicon/mstile-310x310.png' | prepend: site.url }}" />
+<!-- SEO end -->

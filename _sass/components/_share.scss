@@ -1,0 +1,41 @@
+.share-box {
+
+    margin-bottom: 3em;
+    font-size: 1.2em;
+
+    a {
+        display: inline-block;
+        text-decoration: none; 
+        padding: 0 0.8em;;
+        border: none; 
+        font-size: 1.2em;
+        filter: grayscale(100%);
+
+        &:hover {
+            text-decoration: none;
+            filter: grayscale(0%);
+            -webkit-transition: background-color 200ms linear;
+            -ms-transition: background-color 200ms linear;
+            transition: background-color 200ms linear; 
+        }
+    }
+
+    .f:hover {
+        color: #3b5998 !important;
+    }
+    .t:hover {
+        color: #4099FF !important;
+    }
+    .g:hover {
+        color: #d34836 !important;
+    }
+    .r:hover {
+        color: #ff5700 !important;
+    }
+    .l:hover {
+        color: #0077b5 !important;
+    }
+    .e:hover {
+        color: #444444 !important;
+    }
+}
