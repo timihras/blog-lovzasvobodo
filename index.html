@@ -3,23 +3,26 @@ layout: default
 ---
 
 <!-- Featured Post -->
-{% assign post = site.posts.last %}
-
-<section id="banner">
-    <div class="content">
-        <header>
-            <h1><a href="{{ post.url | downcase | prepend: site.url }}">{{ post.title }}</a></h1>
-            <p>{{ post.subtitle }}</p>
-        </header>
-        <p>{{ post.excerpt }}</p>
-        <ul class="actions">
-            <li><a href="{{ post.url | downcase | prepend: site.url }}" class="button big">Preberi več</a></li>
-        </ul>
-    </div>
-    <span class="image object">
-		<img src="{{ '/assets/img/f/' | prepend: site.url | append: post.image }}" alt="{{ post.title }}">
-    </span>
-</section>
+{% for page in site.pages %}
+	{% if page.type == 'featured' %}
+	<section id="banner">
+		<div class="content">
+			<header>
+				<h1><a href="{{ page.url | downcase | prepend: site.url }}">{{ page.title }}</a></h1>
+				<p>{{ page.subtitle }}</p>
+			</header>
+			<p>{{ page.content | strip_html | truncatewords: 60 }}</p>
+			<ul class="actions">
+				<li><a href="{{ page.url | downcase | prepend: site.url }}" class="button special big">Začni tukaj</a></li>
+				<li><a href="{{ page.url | downcase | prepend: site.url }}" class="button big">Seznam prispevkov</a></li>
+			</ul>
+		</div>
+		<span class="image object">
+			<img src="{{ '/assets/img/f/' | prepend: site.url | append: page.image }}" alt="{{ page.title }}">
+		</span>
+	</section>
+	{% endif %}
+{% endfor %}
 
 <!-- Section -->
 <section>
