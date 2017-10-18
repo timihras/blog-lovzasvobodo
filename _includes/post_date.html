@@ -9,6 +9,6 @@
 
 <!-- {{ day }}. {{ month }} {{ year }} -->
 <div class="post-date"> 
-    <span><i class="fa fa-calendar-o" aria-hidden="true"></i> Obljavljeno: <time datetime="{{include.post.date | date:"%Y-%m-%d"}}" pubdate>{{ day }}. {{ month }} {{ year }}</time></span>
-    <span><i class="fa fa-clock-o" aria-hidden="true"></i> Čas za branje: {% if words < 360 %} 1 min. {% else %} {{ words | divided_by:180 }} min {% endif %}</span>
+    <div><i class="fa fa-calendar-o" aria-hidden="true"></i> Obljavljeno: <time datetime="{{include.post.date | date:"%Y-%m-%d"}}" pubdate>{{ day }}. {{ month }} {{ year }}</time></div>
+    <div><i class="fa fa-clock-o" aria-hidden="true"></i> Čas za branje: {% if words < 360 %} 1 min. {% else %} {{ words | divided_by:180 }} min {% endif %}</div>
 </div>
