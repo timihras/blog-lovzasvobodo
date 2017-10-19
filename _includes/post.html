@@ -1,9 +1,13 @@
 <article>
     <a href="{{ post.url | downcase | prepend: site.url }}" class="image"><img src={{ "/assets/img/f/" | prepend: site.url | append: post.image }} alt="{{post.title}}"></a>
     <h3><a href="{{ post.url | downcase | prepend: site.url }}">{{ post.title }}</a></h3>
-    {% include post_date.html date=post.date %}
-    <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
-    <ul class="actions">
-        <li><a href="{{ post.url | downcase  | prepend: site.url}}" class="button">Preberi več</a></li>
-    </ul>
+
+    {% if include.type != "category" %}
+        {% include post_date.html date=post.date %}
+        <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
+        <ul class="actions">
+            <li><a href="{{ post.url | downcase  | prepend: site.url}}" class="button">Preberi več</a></li>
+        </ul>
+    {% endif %}
+
 </article>

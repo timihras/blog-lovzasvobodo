@@ -14,7 +14,7 @@ layout: default
 			<p>{{ page.content | strip_html | truncatewords: 60 }}</p>
 			<ul class="actions">
 				<li><a href="{{ page.url | downcase | prepend: site.url }}" class="button special big">Začni tukaj</a></li>
-				<li><a href="{{ page.url | downcase | prepend: site.url }}" class="button big">Seznam prispevkov</a></li>
+				<li><a href="{{ '/povzetek/' | prepend: site.url }}" class="button big">Seznam prispevkov</a></li>
 			</ul>
 		</div>
 		<span class="image object">

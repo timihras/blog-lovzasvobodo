@@ -36,7 +36,7 @@
                 <h2>Aktualno // Zanimivo</h2>
             </header>
             <div class="mini-posts">
-                 {% for post in site.posts limit:3 %}
+                 {% for post in site.posts limit:2 %}
                 <article>
                     <a href="{{ post.url | prepend: site.url }}" class="image">
                         <img src={{ "/assets/img/f/" | prepend: site.url | append: post.image}} 

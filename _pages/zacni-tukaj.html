@@ -20,6 +20,14 @@ type: featured
 
     <p>Nakazal sem že, da je finančna svoboda za vsakega drugačna. Zame je finančno svoboden tisti, ki ne čuti strahu pred izgubo denarja oziroma tisti, ki ima toliko pasivnih prihodkov, da lahko pokrije vse nujne življenjske izdatke, hkrati pa je brez težav sposoben financirati svojo lastno ustvarjalnost in dobrodelnost.</p>
 
+    <div class="posts">
+		{% for post in site.categories.podjetnistvo limit:3 %}
+
+		{% include post.html type='category' %}
+
+		{% endfor %}
+	</div>
+
     <p>Več na teme podjetništva, finančne svobode, pasivnih prihodkov in podobno lahko najdeš na <a href="{{site.url}}/podjetnistvo">tej povezavi</a>.</p>
 
     <h2>Splet in design</h2>
@@ -28,6 +36,14 @@ type: featured
 
     <p>Danes je za mano več manjhnih in velikih projektov vzpostavitev spletnih strani, sodelovanja pri oblikovanju blagovnih znamk in celostne grafične podobe podjetja. Kljub vsemu zase še vedno pravim, da sem ljubiteljski oblikovalec. Ne zaradi slabe kvalitete, saj je v meni tudi veliko perfekcionista, ampak zato, ker to delo ljubim. Ampak tukaj nisem za to, da predstavljam sebe.</p>
 
+    <div class="posts">
+		{% for post in site.categories.splet-in-design limit:3 %}
+
+		{% include post.html type='category' %}
+
+		{% endfor %}
+	</div>
+
     <p>Prebrskaj <a href="{{site.url}}/splet-in-design">to povezavo</a>, če te zanima kako lahko s svojimi nasveti pomagam tebi.</p>
 
     <h2>Ati v zagati</h2>
@@ -35,6 +51,14 @@ type: featured
     <p>Pisal se je 10. avgust leta 2017, ko je v moje življenje stopil Lukas. Veliko krat sem se spraševal, kako je lahko, v filmih ali intervjujih uspešnih športnikov, odgovor na vprašanje "kako se počutite?" - neopisjivo. No zdaj vem. Odkar pomnim sem si želel družino v polnem pomenu besede. In če sva do tistega popoldneva bila z Majo samo par, smo sedaj luškana mlada družina.</p>
 
     <p>Ampak otrok s seboj prinese veliko več, kot samo neopisljive občutke ob porodu. Kot fant, ki pred tem še nikoli ni držal v rokah nobenega otroka, sem se srečal s pravilnim pestovanjem otroka, previjanjem plenic, neutolažljivim jokom, nočnim zbujanjem, prvim nasmehom in nenazadnje s prvo besedo - MUE. :) Na prvi pogled sem napisal veliko več negativnega, ampak nikakor me tukaj ne gre razumeti narobe, vse to počnem z nasmeškom na obrazu.</p>
+
+    <div class="posts">
+		{% for post in site.categories.ati-v-zagati limit:3 %}
+
+		{% include post.html type='category' %}
+
+		{% endfor %}
+	</div>
 
     <p>Dogodivščine, ki bo nekega dne izjemen spomin, a v tem trenuku zabavno branje, so na <a href="{{site.url}}/ati-v-zagati}}">tej povezavi</a>.</p>
 </section>
