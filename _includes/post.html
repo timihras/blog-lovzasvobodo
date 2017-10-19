@@ -4,7 +4,7 @@
 
     {% if include.type != "category" %}
         {% include post_date.html date=post.date %}
-        <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
+        <p>{{ post.content | strip_html | truncate: 170 }}</p>
         <ul class="actions">
             <li><a href="{{ post.url | downcase  | prepend: site.url}}" class="button">Preberi več</a></li>
         </ul>

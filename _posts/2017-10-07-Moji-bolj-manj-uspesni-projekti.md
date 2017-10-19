@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Moji uspešni in manj uspešni projekti"
+title: "Moji bolj in manj uspešni projekti"
 description: "Ni pomembno kolikokrat pademo. Pomembno je, da se vsakokrat poberemo in nadaljujemo svojo začrtano pot!"
 image: moji_uspesni_in_neuspesni_projekti_lovzasvobodo.jpg
 date: 2017-10-07 11:29:00 +0200
@@ -12,7 +12,7 @@ Morda lahko, še preden začnem s pisanjem o svoji novi poti, pogledam nekoliko 
 
 > Ni pomembno kolikokrat pademo. Pomembno je, da se vsakokrat poberemo in nadaljujemo svojo začrtano pot!
 
-<hr class="major">
+___
 
 ## Spletna trgovina
 
@@ -20,7 +20,7 @@ Kot polno angažiran študent ekonomije sem se zaposlil v očetovi trgovini, ki 
 
 Po letu ali dveh je bila logična poteza, da našo bazo potencialnih strank razširiva iz nekaj tisoč prebivalcev Maribora na več kot milijon uporabnikov spleta po celi Sloveniji. Brez vloženega evra, a ogromno vloženega časa, sva uspela zgraditi čisto pravo spletno trgovino. Spletno trgovino, ki je bila na svojem vrhuncu zelo soliden vir prihodka podjetja. Žal pa ta pravljica ni trajala dolgo. Zaradi pomanjkanja znanja mi ni uspelo spletne strani ohraniti stabilne, zaradi konkurence iz tujine so marže postajale prenizke, zaradi poštnine v Sloveniji so bili stroški previsoki. Vse to in še več drugih okoliščin je poskrbelo, da sva z Majo zaključila delo v očetovem podjetju.
 
-<hr class="major">
+___
 
 ## Varstvo hišnih ljubljenčkov
 

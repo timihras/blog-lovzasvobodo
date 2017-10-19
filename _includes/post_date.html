@@ -1,4 +1,4 @@
-{% assign months = "januar|februar|marec|april|maj|junij|julij|avgust|september|october|november|december" | split: "|" %}
+{% assign months = "januar|februar|marec|april|maj|junij|julij|avgust|september|oktober|november|december" | split: "|" %}
 {% assign m = include.date | date: "%-m" | minus: 1 %}
 {% assign day = include.date | date: "%d" %}
 {% assign month = months[m] %}
@@ -8,7 +8,12 @@
 
 
 <!-- {{ day }}. {{ month }} {{ year }} -->
-<div class="post-date"> 
+<!-- <div class="post-date"> 
     <div><i class="fa fa-calendar-o" aria-hidden="true"></i> Obljavljeno: <time datetime="{{include.post.date | date:"%Y-%m-%d"}}" pubdate>{{ day }}. {{ month }} {{ year }}</time></div>
     <div><i class="fa fa-clock-o" aria-hidden="true"></i> Čas za branje: {% if words < 360 %} 1 min. {% else %} {{ words | divided_by:180 }} min {% endif %}</div>
+</div> -->
+
+<div class="post-date"> 
+    <div><i class="fa fa-calendar-o" aria-hidden="true"></i><time datetime="{{include.post.date | date:"%Y-%m-%d"}}" pubdate>{{ day }}. {{ month }} {{ year }}</time></div>
+    <div><i class="fa fa-clock-o" aria-hidden="true"></i>{% if words < 360 %}1 min{% else %}{{ words | divided_by:180 }} min{% endif %}</div>
 </div>

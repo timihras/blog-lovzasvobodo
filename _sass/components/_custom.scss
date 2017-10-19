@@ -3,10 +3,24 @@
     text-align: center;
 }
 
-.post-date span {
-    padding: 0 1em 0 0;
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.post-date {
+    margin: -1em 0 1em 0;
+    color: _palette(fg-lightest);
+
+    div {
+        display: inline;
+        margin-right: 1em;
+    }
 
     .fa {
-        padding: 0.5em;
+        padding: 0.5em 0.5em 0.5em 0;
     }
 }
