@@ -2,7 +2,7 @@
 layout: post
 title: "Finančna svoboda in moj lov zanjo"
 description: "Finančna svoboda, besedna zveza ki predstavlja zelo širok pojem. Kaj je to in kako jo razumem jaz."
-image: financna-svoboda-lovzasvobodo.jpg
+image: financna-svoboda-lovzasvobodo.png
 date: 2017-10-03 11:29:00 +0200
 categories: 
     - "podjetnistvo"

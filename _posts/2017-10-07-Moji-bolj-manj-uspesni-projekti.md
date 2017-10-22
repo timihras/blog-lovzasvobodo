@@ -2,7 +2,7 @@
 layout: post
 title: "Moji bolj in manj uspešni projekti"
 description: "Ni pomembno kolikokrat pademo. Pomembno je, da se vsakokrat poberemo in nadaljujemo svojo začrtano pot!"
-image: moji_uspesni_in_neuspesni_projekti_lovzasvobodo.jpg
+image: moji_uspesni_in_neuspesni_projekti_lovzasvobodo.png
 date: 2017-10-07 11:29:00 +0200
 categories: 
     - "podjetnistvo"
